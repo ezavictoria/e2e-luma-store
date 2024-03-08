@@ -1,0 +1,30 @@
+{
+  "name": "e2e-luma-store",
+  "version": "1.0.0",
+  "description": "Automation Project using Cypress and Cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "test:open": "cypress open"
+  },
+  "keywords": [
+    "cypress",
+    "cucumber",
+    "automation"
+  ],
+  "author": "Eza Victória Amaral",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.6.6",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/support/steps/*.{js,ts}",
+    "filterSpecs": true,
+    "omitFiltered": true,
+    "nonGlobalStepDefinitions": true
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.2"
+  }
+}
